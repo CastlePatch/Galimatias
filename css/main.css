@@ -1,0 +1,117 @@
+html {
+    font-family: Helvetica;
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    height: 40px;
+    background-color: #777;
+}
+
+
+/* Navigation bar */
+
+.primary-links {
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 10px;
+    max-width: 1000px;
+}
+
+.primary-links a {
+    text-decoration: none;
+    color: white;
+    flex-grow: 1;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.primary-links a li {
+    display: inline-block;
+    list-style: none;
+}
+
+
+/* Primary content */
+
+main {
+    width: 1000px;
+    margin: 20px auto;
+    min-height: calc((100%) - 130px);
+}
+
+.primary-content {
+    display: flex;
+    height: 400px;
+}
+
+
+/* Banner */
+
+.banner {
+    flex-grow: 2;
+    margin-right: 25px;
+    background-color: black;
+}
+
+
+/* Ad */
+
+.ad {
+    flex-grow: 1;
+    background-color: black;
+}
+
+
+/* Featured content */
+
+.feature {
+    margin-top: 25px;
+}
+
+.feature h2 {
+    display: block;
+    background-color: gray;
+    font-size: 2em;
+    padding: 10px 0 10px 10px;
+    margin: 0px;
+}
+
+.feature-content {
+    display: flex;
+    height: 300px;
+}
+
+.feature-content div {
+    flex: 1;
+    background-color: black;
+}
+
+
+/* Footer */
+
+footer {
+    width: 1000px;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    background-color: black;
+    display: flex;
+}
+
+.social-media {
+    flex-grow: 1;
+}
+
+.secondary-links {
+    flex-grow: 1;
+    background-color: white;
+}
+
+.copyright {
+    flex-grow: 1;
+}
