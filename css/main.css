@@ -10,7 +10,7 @@ body {
 
 header {
     height: 40px;
-    background-color: #777;
+    background-color: #333;
 }
 
 
@@ -61,21 +61,29 @@ main {
 .banner {
     flex-grow: 2;
     margin-right: 25px;
-    background-color: black;
     max-width: 65%;
+    max-height: 400px;
+}
+
+.container {
+    overflow: hidden;
+    max-height: 400px;
+    width: 100%;
 }
 
 .slide {
     height: 100%;
     color: white;
     position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
 .slide h2 {
     margin: 0px;
     padding: 10px;
     max-width: 100%;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
 }
 
 .slide p {
@@ -84,7 +92,7 @@ main {
     color: white;
     margin: 0px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     font-size: 1.3em;
 }
 
@@ -93,7 +101,20 @@ main {
 
 .ad {
     flex-grow: 1;
-    background-color: black;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.ad h4 {
+    border-bottom: 1px solid #333;
+    text-align: center;
+    margin: 0;
+    color: #000;
+}
+
+.advertisement {
+    height: 100%;
+    ;
 }
 
 
@@ -105,27 +126,34 @@ main {
 
 .feature h2 {
     display: block;
-    background-color: gray;
-    font-size: 2em;
+    background-color: #333;
+    font-size: 1.7em;
     padding: 10px 0 10px 10px;
-    margin: 0px;
+    margin: 0 0 10px 0;
+    color: white;
 }
 
 .feature-content {
     display: flex;
-    height: 300px;
+    height: 250px;
 }
 
 .feature-content article {
     flex: 1;
-    background-color: black;
     position: relative;
+    border-right: 1px solid #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.feature-content article:first-child {
+    border-left: 1px solid #333;
 }
 
 .feature-content article h3 {
     margin: 0px;
     padding: 10px 0px 10px 10px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     color: white;
 }
 
@@ -134,8 +162,24 @@ main {
     bottom: 0px;
     padding: 10px;
     margin: 0px;
-    background-color: rgba(0, 0, 0, .3);
+    background-color: rgba(0, 0, 0, .6);
     color: white;
+}
+
+#sport {
+    background-image: url("https://cdn.pixabay.com/photo/2014/12/08/04/28/football-560467_960_720.jpg");
+}
+
+#world {
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/f/fb/Miis_flags.jpg");
+}
+
+#juarez {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1b/Juarez_Cathedrale_et_mission_24-02-2007.jpg");
+}
+
+#el-paso {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/b/b1/El_Paso_Scenic_Drive.jpg");
 }
 
 
@@ -145,19 +189,32 @@ footer {
     width: 1000px;
     height: 50px;
     margin: 20px auto 0 auto;
-    background-color: black;
     display: flex;
+    border-top: 1px solid #666;
 }
 
 .social-media {
     flex-grow: 1;
+    text-align: right;
+}
+
+.social-media a {
+    font-size: 1.3em;
+    color: #666;
+    text-decoration: none;
+    line-height: 50px;
+    padding-left: 10px;
 }
 
 .secondary-links {
+    padding-left: 50px;
     flex-grow: 1;
-    background-color: white;
+    text-align: left;
 }
 
-.copyright {
-    flex-grow: 1;
+.secondary-links a {
+    font-size: 1em;
+    color: #666;
+    text-decoration: none;
+    line-height: 50px;
 }
